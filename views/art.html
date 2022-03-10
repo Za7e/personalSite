@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/art.css">
+    <title>Art</title>
+</head>
+
+<body>
+    <main class="container">
+        <header class="navigation">
+            <a href="../index.html">welcome</a>
+            <a href="./art.html">art</a>
+            <a href="./music.html">music</a>
+            <a href="./connect.html">connect</a>
+        </header>
+        <div class="column columnOne">
+            <div class="imgContainerContainer">
+                <div class="imgContainer">
+                    <div id="myModal" class="modal"><span class="close cursor" onclick="closeModal()">×</span>
+                        <section class="modal-content">
+                            <div class="mySlides">
+                                <img src="../images/art/door.jpg">
+                            </div>
+                            <div class="mySlides">
+                                <img src="../images/art/saint.jpg">
+                            </div>
+                            <div class="mySlides">
+                                <img src="../images/art/neighbour.jpg">
+                            </div>
+                            <div class="mySlides">
+                                <img src="../images/art/owl.jpg">
+                            </div>
+                            <div class="mySlides">
+                                <img src="../images/art/whale.jpg">
+                            </div>
+                            <div class="mySlides">
+                                <img src="../images/art/chaos.jpg">
+                            </div>
+                            <div class="mySlides">
+                                <img src="../images/art/many.jpg">
+                            </div>
+                            <div class="mySlides">
+                                <img src="../images/art/frontier.jpg">
+                            </div>
+                            <div class="mySlides">
+                                <img src="../images/art/jelly.jpg">
+                            </div>
+                            <div class="mySlides">
+                                <img src="../images/art/balloon.jpg">
+                            </div>
+                            <div class="mySlides">
+                                <img src="../images/art/spindrift.jpg">
+                            </div>
+                            <div class="mySlides">
+                                <img src="../images/art/dino.jpg">
+                            </div>
+                            <div class="mySlides">
+                                <img src="../images/art/basecamp.jpg">
+                            </div>
+                            <div class="mySlides">
+                                <img src="../images/art/birdman.jpg">
+                            </div>
+                            <div class="mySlides">
+                                <img src="../images/art/duality.jpg">
+                            </div>
+                            <div class="mySlides">
+                                <img src="../images/art/green.jpg">
+                            </div>
+                            <div class="mySlides">
+                                <img src="../images/art/paper.jpg">
+                            </div>
+                            <div class="mySlides">
+                                <img src="../images/art/shark.jpg">
+                            </div>
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column columnTwo">
+            <div class="columnBackground">
+                <section class="scroller">
+                    <p onclick="openModal();currentSlide(1)" class="art-door">AN OPEN DOOR</p>
+                    <p onclick="openModal();currentSlide(2)" class="art-saint">ST. VINCENT</p>
+                    <p onclick="openModal();currentSlide(3)" class="art-neighbour">NEW NEIGHBOUR</p>
+                    <p onclick="openModal();currentSlide(4)" class="art-owl">OWL</p>
+                    <p onclick="openModal();currentSlide(5)" class="art-whale">WHALE OF A TIME</p>
+                    <p onclick="openModal();currentSlide(6)" class="art-chaos">CHAOS</p>
+                    <p onclick="openModal();currentSlide(7)" class="art-many">AN EARFUL</p>
+                    <p onclick="openModal();currentSlide(8)" class="art-frontier">NEW FRONTIER</p>
+                    <p onclick="openModal();currentSlide(9)" class="art-jelly">JELLY BOY</p>
+                    <p onclick="openModal();currentSlide(10)" class="art-balloon">BALLOON</p>
+                    <p onclick="openModal();currentSlide(11)" class="art-spindrift">SPINDRIFT LOGO</p>
+                    <p onclick="openModal();currentSlide(12)" class="art-dino">DINO LOVE</p>
+                    <p onclick="openModal();currentSlide(13)" class="art-basecamp">BASECAMP</p>
+                    <p onclick="openModal();currentSlide(14)" class="art-birdman">BIRDMAN</p>
+                    <p onclick="openModal();currentSlide(15)" class="art-duality">DUALITY</p>
+                    <p onclick="openModal();currentSlide(16)" class="art-green">GO GREEN</p>
+                    <p onclick="openModal();currentSlide(17)" class="art-paper">PAPER WINGS</p>
+                    <p onclick="openModal();currentSlide(18)" class="art-shark">SHARK</p>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="../scripts/art.js"></script>
+</body>
+
+</html>

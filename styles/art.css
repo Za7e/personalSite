@@ -1,0 +1,122 @@
+.column {
+    height: 100%;
+}
+
+.columnOne{
+    width:1px;
+    flex-grow: 1;
+    background-image: url('../images/archway.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height:100vh;
+}
+
+.columnTwo{
+    width:300px;
+    height: 100vh;
+}
+
+.columnBackground{
+    background-image: url('../images/bars.png');
+    background-attachment: local;
+    overflow-y:scroll;
+    background-size:300px;
+    height:100%;
+}
+
+.scroller{
+    text-align:center;
+}
+
+.scroller p{
+    font-size:1.5em;
+    margin-top:25px;
+    margin-bottom:46px;
+}
+
+.container {
+    flex-wrap:wrap;
+    position: fixed;
+}
+
+.navigation {
+    width: 100%;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .imgContainer{
+      height:100vh;
+      width:100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      padding: 0;
+    }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  .mySlides img{
+      max-height:85vh;
+      margin-bottom:5%;
+      max-width:1000px;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
