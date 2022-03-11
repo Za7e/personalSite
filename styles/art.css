@@ -12,6 +12,10 @@
     max-height:100vh;
 }
 
+.greyOut{
+    background-color: rgba(255,255,255,0.7);
+}
+
 .columnTwo{
     width:300px;
     height: 100vh;
@@ -41,7 +45,7 @@
 }
 
 .navigation {
-    width: 100%;
+    margin-right:300px;
 }
 
 
@@ -62,19 +66,20 @@
     }
   
   /* Hide the images by default */
-  .mySlides {
+  .mySlides, .myPreviews {
     display: none;
   }
 
   .mySlides img{
       max-height:85vh;
-      margin-bottom:5%;
+      margin-bottom:8%;
       max-width:1000px;
   }
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
+
+  .myPreviews img{
+      max-height: 300px;
+      margin-right: 8%;
+      max-width: 300px;
   }
   
   /* Next & previous buttons */
@@ -86,37 +91,39 @@
     width: auto;
     padding: 16px;
     margin-top: -50px;
-    color: blue;
+    color:black;
     font-weight: bold;
     font-size: 20px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
+    border-radius: 3px 0 0 3px;
   }
   
-  /* Position the "next button" to the right */
   .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
   }
 
   .prev {
     left: 0;
-    border-radius: 3px 0 0 3px;
   }
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover,
-  .next:hover {
+  .next:hover{
     background-color: rgba(0, 0, 0, 0.8);
   }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+
+  .scroller p:hover, #slideModal span{
+    cursor: pointer;
+  }
+
+  .close{
+      font-size: 30px;
+      transition: 0.6s ease;
+  }
+  .close:hover {
+    position:relative;
+    color:rgba(0, 0, 0, 0.4);
   }
