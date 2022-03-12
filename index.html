@@ -11,8 +11,15 @@
 </head>
 
 <body>
+    <video autoplay muted loop id="thistleVideo" class="hidden">
+        <source src="./videos/thistle.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop id="cloudVideo" class="hidden">
+        <source src="./videos/clouds.mp4" type="video/mp4">
+    </video>
     <main class="container">
         <div class="column columnOne">
+            <img class="birds" onclick="cloudVideo()" src="./images/birds.png" alt="birds">
             <section class="welcomeText">
                 <p>Hello and welcome to my site</p>
                 <p> My name is Zale</p>
@@ -22,17 +29,24 @@
         </div>
         <div class="column columnTwo">
             <img src="./images/doorway.png" class="doorway">
-            <div class="colourBlock"></div>
+            <div class="doorColor"></div>
         </div>
         <div class="column columnThree">
             <section class="navigation">
-                <a href="index.html">welcome</a>
-                <a href="./views/art.html">art</a>
-                <a href="./views/music.html">music</a>
-                <a href="./views/connect.html">connect</a>
+                <a onmouseenter="doorColor('rgb(255,255,0, 0.5)')" onmouseleave="doorColor('transparent')"
+                    href="index.html">welcome</a>
+                <a onmouseenter="doorColor('rgb(127, 255, 212, 0.5)')" onmouseleave="doorColor('transparent')"
+                    href="./views/art.html">art</a>
+                <a onmouseenter="doorColor('rgb(127, 0, 255, 0.5)')" onmouseleave="doorColor('transparent')"
+                    href="./views/music.html">music</a>
+                <a onmouseenter="doorColor('rgba(127, 255, 0, 0.5)')" onmouseleave="doorColor('transparent')"
+                    href="./views/connect.html">connect</a>
             </section>
+            <img class="plant" onclick="plantVideo()" src="./images/plants.png" alt="plant">
         </div>
     </main>
+
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>

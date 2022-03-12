@@ -72,13 +72,12 @@
 
   .mySlides img{
       max-height:85vh;
-      margin-bottom:8%;
+      margin-bottom:10%;
       max-width:1000px;
   }
 
   .myPreviews img{
       max-height: 300px;
-      margin-right: 8%;
       max-width: 300px;
   }
   
