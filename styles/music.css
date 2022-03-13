@@ -18,9 +18,13 @@
     font-size: 2em;
 }
 
+.musicSelection a, p{
+    font-family: 'Stardos Stencil', cursive;
+}
+
 .rowOne{
     justify-content: center;
-    margin-bottom:1.5em;
+    margin-bottom:2.5em;
 }
 
 .rowTwo{

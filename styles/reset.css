@@ -49,6 +49,8 @@ table {
 	border-spacing: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Arapey&family=Stardos+Stencil&family=Xanh+Mono&display=swap');
+
 .container{
     display:flex;
     width:100vw;
@@ -63,6 +65,10 @@ table {
 
 .row{
 	display:flex;
+}
+
+a {
+	font-family: 'Xanh Mono', monospace;
 }
 
 a, a:visited, a:hover, a:active {

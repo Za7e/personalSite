@@ -8,8 +8,10 @@
 }
 
 .welcomeText p{
+    font-family: 'Arapey', serif;
+    font-size: 1.2em;
     margin-bottom:2.5em;
-    margin-left: .5em;
+    margin-left: 1.5em;
     margin-right: .5em;
 }
 
@@ -20,9 +22,9 @@
 
 .doorway{
     display:block;
-    width:400px;
+    width:350px;
     height:700px;
-    margin-left: 30px;
+    margin-left: 100px;
     position:absolute;
 }
 
@@ -30,7 +32,7 @@
     display: block;
     width:300px;
     height:600px;
-    margin-left: 120px;
+    margin-left: 140px;
     transition: 0.3s ease;
 }
 
@@ -46,6 +48,7 @@
 
 .navigation a{
     margin-bottom: 2em;
+    z-index: 1;
 }
 
 .plant{
@@ -53,6 +56,7 @@
     right:5px;
     bottom:0;
     height: 70%;
+    z-index: 0;
 }
 .plant:hover{
     cursor:pointer;
@@ -89,7 +93,110 @@
     z-index: -1;
     object-fit:cover;
   }
-
+  .navIcon{
+    display:none;
+  }
   .hidden{
       display:none;
   }
+
+  @media (max-width: 1200px) {  
+    .doorway{
+        margin-left: 40px;
+        width:300px;
+        height:600px;
+    }
+    .doorColor{
+        margin-left: 80px;
+        width:250px;
+        height:500px;
+    }
+    .columnOne{
+        justify-content:end;
+        margin-bottom:50px;
+      }
+  }
+
+  @media (max-width: 950px) {  
+    .columnOne{
+        justify-content:end;
+        margin-bottom:50px;
+      }
+    .columnThree{
+        justify-content:start;
+      }
+    .welcomeText p{
+        font-size: 17px;
+          margin-left:.5em;
+      }
+    .navigation a{
+        font-size: 20px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .doorway{
+        margin-left: 0px;
+    }
+    .doorColor{
+        margin-left: 40px;
+    }
+  }
+
+  @media (max-width: 750px){
+    .plant{
+        display:none;
+    }
+    .birds{
+        display:none;
+    }
+    .container{
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+    .navIcon{
+        display:block;
+    }
+    .navigation a:not(:first-child){
+        display:none;
+    }
+    .navigation.responsive {
+        position: absolute;
+        transition: 0.3s ease;
+        background-color: white;
+    }
+    .navigation.responsive a.navIcon {
+        top: 0;
+    }
+    .navigation.responsive a {
+      display: block;
+    }
+    .doorway{
+        margin-left: 0px;
+        width:170px;
+        height:330px;
+        position:absolute;
+        bottom:0;
+        z-index: 0;
+    }
+    .doorColor{
+        width:140px;
+        height:280px;
+        position:absolute;
+        margin-right:20px;
+        bottom:0;
+        z-index: -1;
+    }
+    .column{
+          align-items:center;
+          width:100%;
+    }
+    .columnThree{
+        height:100px;
+    }
+    .welcomeText p{
+        margin-top:20px;
+        margin-bottom:20px;
+        font-size:16px;
+        text-align:center;
+    }
+}
