@@ -1,6 +1,12 @@
 const imgContainer = document.querySelector('.imgContainer');
 const previewModal = document.getElementById("previewModal");
 const slideModal = document.getElementById("slideModal");
+const color = document.querySelector('.container');
+
+
+function backgroundColor(a) {
+    color.style.backgroundColor = a;
+}
 
 let slideIndex = 1;
 let previewIndex = 1;

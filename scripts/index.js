@@ -1,8 +1,9 @@
 const color = document.querySelector('.doorColor');
 const plantVid = document.getElementById('thistleVideo');
 const cloudVid = document.getElementById('cloudVideo');
+const nav = document.getElementById("navBar");
 
-function doorColor(a) {
+function backgroundColor(a) {
     color.style.backgroundColor = a;
 }
 
@@ -29,7 +30,6 @@ function showmenu() {
 }
 
 function openNav() {
-    let nav = document.getElementById("navBar");
     if (nav.className === "navigation") {
         nav.className += " responsive";
     } else {

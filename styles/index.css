@@ -187,15 +187,16 @@
         z-index: -1;
     }
     .column{
-          align-items:center;
-          width:100%;
+        align-items:center;
+        width:100%;
     }
     .columnThree{
         height:100px;
+        flex-direction: column;
     }
     .welcomeText p{
-        margin-top:20px;
-        margin-bottom:20px;
+        margin-top:10px;
+        margin-bottom:10px;
         font-size:16px;
         text-align:center;
     }
