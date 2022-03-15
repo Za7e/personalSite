@@ -16,12 +16,19 @@
 <body>
     <main class="container">
         <div class="column columnOne">
-            <header class="navigation">
-                <a href="../index.html">welcome</a>
-                <a href="./art.html">art</a>
-                <a href="./music.html">music</a>
-                <a href="./connect.html">connect</a>
-            </header>
+            <nav class="navigation" id="navBar">
+                <a href="javascript:void(0);" class="navIcon" onclick="openNav()">
+                    <img src="../images/nav-icon.png" alt="icon">
+                </a>
+                <a onmouseenter="backgroundColor('rgb(255,255,0, 0.5)')" onmouseleave="backgroundColor('transparent')"
+                    href="../index.html">welcome</a>
+                <a onmouseenter="backgroundColor('rgb(127, 255, 212, 0.5)')"
+                    onmouseleave="backgroundColor('transparent')" href="./art.html">art</a>
+                <a onmouseenter="backgroundColor('rgb(127, 0, 255, 0.5)')" onmouseleave="backgroundColor('transparent')"
+                    href="./music.html">music</a>
+                <a onmouseenter="backgroundColor('rgb(127, 255, 0, 0.5)')" onmouseleave="backgroundColor('transparent')"
+                    href="./connect.html">connect</a>
+            </nav>
             <section class="musicSelection">
                 <div class="row rowOne">
                     <p class="album">DAY BY DAY</p>
@@ -75,8 +82,8 @@
             </section>
         </div>
     </main>
-
     <script src="../scripts/music.js"></script>
+    <script src="../scripts/nav.js"></script>
 </body>
 
 </html>

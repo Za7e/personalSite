@@ -4,7 +4,12 @@ const demosUp = document.querySelector('.demosUp');
 const demosUpHolder = document.querySelector('.demosUpHolder');
 const demosDown = document.querySelector('.demosDown');
 const demosDownHolder = document.querySelector('.demosDownHolder');
+const color = document.querySelector('.container');
 
+
+function backgroundColor(a) {
+    color.style.backgroundColor = a;
+}
 
 album.onclick = function () {
     albumHolder.classList.toggle('hidden');
