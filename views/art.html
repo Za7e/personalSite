@@ -15,7 +15,10 @@
 
 <body>
     <main class="container">
-        <header class="navigation">
+        <nav class="navigation" id="navBar">
+            <a href="javascript:void(0);" class="navIcon" onclick="openNav()">
+                <img src="../images/nav-icon.png" alt="icon">
+            </a>
             <a onmouseenter="backgroundColor('rgb(255,255,0, 0.5)')" onmouseleave="backgroundColor('transparent')"
                 href="../index.html">welcome</a>
             <a onmouseenter="backgroundColor('rgb(127, 255, 212, 0.5)')" onmouseleave="backgroundColor('transparent')"
@@ -24,7 +27,7 @@
                 href="./music.html">music</a>
             <a onmouseenter="backgroundColor('rgb(127, 255, 0, 0.5)')" onmouseleave="backgroundColor('transparent')"
                 href="./connect.html">connect</a>
-        </header>
+        </nav>
         <div class="column columnOne">
             <div class="imgContainerContainer">
                 <div class="imgContainer">
@@ -189,6 +192,7 @@
         </div>
     </main>
     <script src="../scripts/art.js"></script>
+    <script src="../scripts/nav.js"></script>
 </body>
 
 </html>
