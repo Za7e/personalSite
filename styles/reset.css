@@ -70,6 +70,7 @@ table {
 
 a {
 	font-family: 'Xanh Mono', monospace;
+	text-decoration:none;
 }
 
 a, a:visited, a:hover, a:active {
@@ -86,7 +87,6 @@ a, a:visited, a:hover, a:active {
 
 .navigation a{
     font-size: 2em;
-    text-decoration:none;
 	transition: 0.3s ease;
 }
 

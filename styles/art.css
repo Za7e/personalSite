@@ -35,18 +35,18 @@
 
 .scroller p{
   font-family: 'Stardos Stencil', cursive;
-    font-size:1.5em;
-    margin-top:28px;
-    margin-bottom:46px;
+  font-size:1.5em;
+  margin-top:28px;
+  margin-bottom:46px;
 }
 
 .container {
-    flex-wrap:wrap;
-    position:fixed;
+  flex-wrap:wrap;
+  position:fixed;
 }
 
 .navigation {
-    margin-right:300px;
+  margin-right:300px;
 }
 
 
