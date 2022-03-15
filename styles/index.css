@@ -100,7 +100,7 @@
       display:none;
   }
 
-  @media (max-width: 1200px) {  
+@media (max-width: 1200px) {  
     .doorway{
         margin-left: 40px;
         width:300px;
@@ -115,9 +115,9 @@
         justify-content:end;
         margin-bottom:50px;
       }
-  }
+}
 
-  @media (max-width: 950px) {  
+@media (max-width: 950px) {  
     .columnOne{
         justify-content:end;
         margin-bottom:50px;
@@ -142,7 +142,7 @@
     }
   }
 
-  @media (max-width: 750px){
+@media (max-width: 750px){
     .plant{
         display:none;
     }
@@ -179,12 +179,13 @@
         z-index: 0;
     }
     .doorColor{
-        width:140px;
-        height:280px;
+        width:100vw;
+        height:100vh;
         position:absolute;
-        margin-right:20px;
         bottom:0;
+        left:0;
         z-index: -1;
+        margin-left: 0px;
     }
     .column{
         align-items:center;
@@ -195,7 +196,6 @@
         flex-direction: column;
     }
     .welcomeText p{
-        margin-top:10px;
         margin-bottom:10px;
         font-size:16px;
         text-align:center;

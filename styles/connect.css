@@ -1,66 +1,66 @@
 .container{
-    flex-direction: column;
+  flex-direction: column;
 }
-
 .connect{
-    background-image: url('../images/pages.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:100%;
+  background-image: url('../images/pages.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100%;
 }
 .connectContent{
-    width:36vw;
-    height:36vh;
+  width:36vw;
+  height:36vh;
 }
 .connect p{
-    font-family: 'Arapey', serif;
-    font-size: 1.1em;
-    margin-bottom:1em;
+  font-family: 'Arapey', serif;
+  font-size: 1.1em;
+  margin-bottom:1em;
 }
 .connect a{
-    margin-right:1em;
+  margin-right:1em;
 }
 
 @media (max-width: 1300px) { 
-    .connect p{
-        font-size: 0.9em;
-    }
+  .connect p{
+    font-size: 0.9em;
+  }
 }
 
 @media (max-width: 750px) { 
-    .navIcon{
-        display:block;
-      }
-      .navigation{
-        border-bottom: none;
-        position:absolute;
-    }
-      .navigation a:not(:first-child){
-        display:none;
-      }
-      .navigation.responsive {
-        position: absolute;
-        transition: 0.3s ease;
-        background-color: white;
-        flex-direction: column;
-        height:30%;
-        align-items: center;
-        z-index: 1;
-      }
-      .navigation.responsive a.navIcon {
-        top: 0;
-      }
-      .navigation.responsive a {
-        display: block;
-      }
-      .connect p, a{
-        font-size: .8em;
-    }
-    .connectContent{
-        width:60vw;
-    }
+  .navIcon{
+    margin-top:5px;
+    display:block;
+  }
+  .navigation{
+    border-bottom: none;
+    position:absolute;
+  }
+  .navigation a:not(:first-child){
+    display:none;
+  }
+  .navigation.responsive {
+    position: absolute;
+    transition: 0.3s ease;
+    background-color: white;
+    flex-direction: column;
+    height: calc(var(--vh, 1vh) * 50);
+    align-items: center;
+    z-index: 1;
+  }
+  .navigation.responsive a.navIcon {
+    top: 0;
+  }
+  .navigation.responsive a {
+    display: block;
+  }
+  .connect p, a{
+    font-size: .8em;
+  }
+  .connectContent{
+      width:60vw;
+  }
 }
