@@ -102,17 +102,18 @@ iframe{
     }
     .musicSelection{
         height:70px;
-        margin-top:10vh;
+        margin-top:calc(var(--vh, 1vh) * 12);
     }
     .rowTwo{
         margin-left:25px;
     }
     .navIcon{
         display:block;
-      }
-      .navigation{
+    }
+    .navigation{
         border-bottom: none;
         position:absolute;
+        margin-top:calc(var(--vh, 1vh) * 2);
     }
     iframe{
         height:300px;
@@ -125,7 +126,7 @@ iframe{
         transition: 0.3s ease;
         background-color: white;
         flex-direction: column;
-        height:30%;
+        height:50%;
         align-items: center;
         z-index: 1;
     }

@@ -1,132 +1,123 @@
 .column {
-    height: 100%;
+  height: 100%;
 }
-
 .columnOne{
-    width:1px;
-    flex-grow: 1;
-    background-image: url('../images/archway.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    max-height:100vh;
+  width:1px;
+  flex-grow: 1;
+  background-image: url('../images/archway.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-height:100vh;
 }
-
 .greyOut{
-    background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255,255,255,0.7);
 }
-
 .columnTwo{
-    width:300px;
-    height: 100vh;
+  width:300px;
+  height: 100vh;
 }
-
 .columnBackground{
-    background-image: url('../images/bars.png');
-    background-attachment: local;
-    overflow-y:scroll;
-    background-size:300px;
-    height:100%;
+  background-image: url('../images/bars.png');
+  background-attachment: local;
+  overflow-y:scroll;
+  background-size:300px;
+  height:100%;
 }
-
 .scroller{
-    text-align:center;
+  text-align:center;
 }
-
 .scroller p{
   font-family: 'Stardos Stencil', cursive;
   font-size:1.5em;
   margin-top:28px;
   margin-bottom:46px;
 }
-
 .container {
   flex-wrap:wrap;
   position:fixed;
 }
-
 .navigation {
   margin-right:300px;
 }
 
-
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
   
-  /* Position the image container (needed to position the left and right arrows) */
-  .imgContainer{
-      height:100vh;
-      width:100%;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: auto;
-      padding: 0;
-    }
+/* Position the image container (needed to position the left and right arrows) */
+.imgContainer{
+  height:100vh;
+  width:100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 0;
+}
   
-  /* Hide the images by default */
-  .mySlides, .myPreviews {
-    display: none;
-  }
+/* Hide the images by default */
+.mySlides, .myPreviews {
+  display: none;
+}
 
-  .mySlides img{
-      max-height:85vh;
-      margin-bottom:10%;
-      max-width:70vw;
-  }
+.mySlides img{
+  max-height:85vh;
+  margin-bottom:10%;
+  max-width:70vw;
+}
 
-  .myPreviews img{
-      max-height: 300px;
-      max-width: 300px;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color:black;
-    font-weight: bold;
-    font-size: 20px;
+.myPreviews img{
+  max-height: 300px;
+  max-width: 300px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color:black;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+}
+
+.prev {
+  left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.scroller p:hover, #slideModal span{
+  cursor: pointer;
+}
+
+.close{
+    font-size: 30px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  .next {
-    right: 0;
-  }
-
-  .prev {
-    left: 0;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover{
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-
-  .scroller p:hover, #slideModal span{
-    cursor: pointer;
-  }
-
-  .close{
-      font-size: 30px;
-      transition: 0.6s ease;
-  }
-  .close:hover {
-    position:relative;
-    color:rgba(0, 0, 0, 0.4);
-  }
+}
+.close:hover {
+  position:relative;
+  color:rgba(0, 0, 0, 0.4);
+}
 
 @media (max-width: 1000px){
   .mySlides img{
@@ -138,19 +129,17 @@
 }
 
 @media (max-width: 700px){
-  .fullheight {
-      height: calc(var(--vh, 1vh) * 100);
-    }
   .container{
     flex-direction: column;
   }
   .navigation{
+    margin-top:calc(var(--vh, 1vh) * 2);
     position:absolute;
   }
   .columnOne{
     width:100vw;
-    margin-top: calc(var(--vh, 1vh) * 10);
-    max-height: calc(var(--vh, 1vh) * 70);
+    margin-top: calc(var(--vh, 1vh) * 12);
+    max-height: calc(var(--vh, 1vh) * 68);
   }
   .columnTwo{
     width:100vw;
@@ -165,6 +154,9 @@
     margin-bottom:10%;
     max-width:100vw;
   }
+  .columnBackground{
+    background-attachment: scroll;
+  }
   .navIcon{
     display:block;
   }
@@ -176,7 +168,7 @@
     transition: 0.3s ease;
     background-color: white;
     flex-direction: column;
-    height:30%;
+    height:50%;
     align-items: center;
     z-index: 1;
   }
