@@ -132,21 +132,19 @@
   .container{
     flex-direction: column;
   }
-  .navigation{
-    margin-top:calc(var(--vh, 1vh) * 2);
-    position:absolute;
+  .navContainer{
+    height: calc(var(--vh, 1vh) * 11);
   }
   .columnOne{
     width:100vw;
-    margin-top: calc(var(--vh, 1vh) * 12);
-    max-height: calc(var(--vh, 1vh) * 68);
+    max-height: calc(var(--vh, 1vh) * 69);
   }
   .columnTwo{
     width:100vw;
     height: calc(var(--vh, 1vh) * 20);
   }
   .imgContainer{
-    max-height:calc(var(--vh, 1vh) * 70);
+    max-height:calc(var(--vh, 1vh) * 69);
     width:100%;
   }
   .mySlides img{
@@ -154,10 +152,8 @@
     margin-bottom:10%;
     max-width:100vw;
   }
-  .columnBackground{
-    background-attachment: scroll;
-  }
   .navIcon{
+    margin-top:5px;
     display:block;
   }
   .navigation a:not(:first-child){
@@ -168,7 +164,7 @@
     transition: 0.3s ease;
     background-color: white;
     flex-direction: column;
-    height:50%;
+    height: calc(var(--vh, 1vh) * 50);
     align-items: center;
     z-index: 1;
   }

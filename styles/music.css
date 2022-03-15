@@ -100,20 +100,21 @@ iframe{
     .musicSelection{
         font-size: 1.2em;
     }
+    .navContainer{
+        height:calc(var(--vh, 1vh) * 11);
+    }
     .musicSelection{
         height:70px;
-        margin-top:calc(var(--vh, 1vh) * 12);
     }
     .rowTwo{
         margin-left:25px;
     }
     .navIcon{
+        margin-top:5px;
         display:block;
     }
     .navigation{
         border-bottom: none;
-        position:absolute;
-        margin-top:calc(var(--vh, 1vh) * 2);
     }
     iframe{
         height:300px;
@@ -126,9 +127,10 @@ iframe{
         transition: 0.3s ease;
         background-color: white;
         flex-direction: column;
-        height:50%;
+        height:calc(var(--vh, 1vh) * 50);
         align-items: center;
         z-index: 1;
+        left:0;
     }
     .navigation.responsive a.navIcon {
         top: 0;
