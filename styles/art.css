@@ -37,14 +37,15 @@
   flex-wrap:wrap;
   position:fixed;
 }
-.navigation {
+.navContainer{
+  display:flex;
+  width:100%;
+  justify-content: space-evenly;
   margin-right:300px;
 }
-
 * {
   box-sizing: border-box;
 }
-  
 /* Position the image container (needed to position the left and right arrows) */
 .imgContainer{
   height:100vh;
@@ -56,23 +57,19 @@
   margin: auto;
   padding: 0;
 }
-  
 /* Hide the images by default */
 .mySlides, .myPreviews {
   display: none;
 }
-
 .mySlides img{
   max-height:85vh;
   margin-bottom:10%;
   max-width:70vw;
 }
-
 .myPreviews img{
   max-height: 300px;
   max-width: 300px;
 }
-
 /* Next & previous buttons */
 .prev,
 .next {
@@ -91,25 +88,20 @@
   -webkit-user-select: none;
   border-radius: 3px 0 0 3px;
 }
-
 .next {
   right: 0;
 }
-
 .prev {
   left: 0;
 }
-
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover{
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 .scroller p:hover, #slideModal span{
   cursor: pointer;
 }
-
 .close{
     font-size: 30px;
     transition: 0.6s ease;
@@ -133,18 +125,18 @@
     flex-direction: column;
   }
   .navContainer{
-    height: calc(var(--vh, 1vh) * 11);
+    height: 75px;
   }
   .columnOne{
     width:100vw;
-    max-height: calc(var(--vh, 1vh) * 69);
+    max-height: calc(var(--vh, 1vh) * 65);
   }
   .columnTwo{
     width:100vw;
     height: calc(var(--vh, 1vh) * 20);
   }
   .imgContainer{
-    max-height:calc(var(--vh, 1vh) * 69);
+    max-height:calc(var(--vh, 1vh) * 65);
     width:100%;
   }
   .mySlides img{

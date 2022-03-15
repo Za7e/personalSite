@@ -3,7 +3,6 @@
     justify-content: space-between;
     width:65%;
 }
-
 .columnTwo{
     align-items:center;
     justify-content: center;
@@ -17,24 +16,22 @@
     width:100%;
     font-size: 2em;
 }
-
 .musicSelection a, p{
     font-family: 'Stardos Stencil', cursive;
 }
-
 .rowOne{
     justify-content: center;
     margin-bottom:2.5em;
 }
-
 .rowTwo{
     justify-content: space-around;
 }
-
+.navContainer{
+    width:100%;
+}
 .navigation{
     border-bottom: 2px solid black;
 }
-
 .musicPlayer{
     background-image: url('../images/droplets.png');
     display:flex;
